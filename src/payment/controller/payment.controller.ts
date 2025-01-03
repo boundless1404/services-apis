@@ -8,7 +8,7 @@ export class PaymentController {
     //
   }
   // webhooks
-  @Post('/starlings/paystack')
+  @Post('/services/paystack')
   async handlePaystackWebhookEvents(
     @Body() eventData: PaystackWebhookEventObject,
     @Headers('x-paystack-signature') webhookSignature: string,
